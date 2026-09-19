@@ -1,7 +1,7 @@
 ## Privacy Policy
 
 **Effective date:** June 26, 2026  
-**Last updated:** June 26, 2026
+**Last updated:** September 20, 2026
 
 This Privacy Policy describes how **Fit Flow** (“we,” “us,” or “our”) handles information when you use our mobile application (“the App”). Fit Flow is a fitness and workout-planning app that helps you select a training goal, follow a structured workout plan, and track your progress.
 
@@ -34,13 +34,13 @@ When you use the App, you may voluntarily provide:
 
 We do **not** currently collect:
 
-- Email address, phone number, or password  
-- Payment or billing information  
-- Government ID or date of birth  
-- Precise location or GPS data  
-- Health platform data (e.g., Apple Health, Google Fit)  
-- Photos, camera input, or contacts  
-- Biometric data  
+- Email address, phone number, or password
+- Payment or billing information
+- Government ID or date of birth
+- Precise location or GPS data
+- Health platform data (e.g., Apple Health, Google Fit)
+- Photos, camera input, or contacts
+- Biometric data
 
 ### 2.2 Information Stored Automatically on Your Device
 
@@ -62,13 +62,18 @@ This data is associated with your installation of the App on your device, not wi
 
 The App connects to **Google Firebase** (`fitflow-f5158` project) to **read** workout content from Firestore collections:
 
-- `goals` — training goal definitions  
-- `exercises` — exercise library (names, descriptions, media references)  
-- `plans` — structured workout plans matched to goals and availability  
+- `goals` — training goal definitions
+- `exercises` — exercise library (names, descriptions, media references)
+- `plans` — structured workout plans matched to goals and availability
 
 These requests retrieve **app content only**. The App does **not** write your name, progress, weights, or other personal data to Firestore.
 
-When your device communicates with Firebase, Google may process standard technical information such as your IP address, device type, operating system, and app instance identifiers as part of providing the Firebase service. See [Google’s Privacy Policy](https://policies.google.com/privacy) and [Firebase documentation](https://firebase.google.com/support/privacy) for details.
+When your device communicates with Firebase, Google may process standard technical information such as your IP address, device type, operating system, and app instance identifiers as part of providing the Firebase service.
+
+For more information, see:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Privacy Documentation](https://firebase.google.com/support/privacy)
 
 #### Google Fonts
 
@@ -78,9 +83,9 @@ The App uses the **Google Fonts** package to load the Inter typeface. When fonts
 
 Based on the current App codebase:
 
-- **No analytics SDK** (e.g., Firebase Analytics, Crashlytics) is integrated in the mobile app at this time.  
-- **No push notifications** or notification permissions are requested.  
-- **No advertising** or ad-tracking frameworks are used.  
+- **No analytics SDK** (e.g., Firebase Analytics, Crashlytics) is integrated in the mobile app at this time.
+- **No push notifications** or notification permissions are requested.
+- **No advertising** or ad-tracking frameworks are used.
 - **No backend user API** is active; configured API base URLs are placeholders and are not used to transmit user data in the current release.
 
 ---
@@ -89,9 +94,9 @@ Based on the current App codebase:
 
 We use the information described above solely to:
 
-1. **Personalize your experience** — display your name, language, and member-since date.  
-2. **Deliver workout plans** — fetch and cache plan content matched to your goal and weekly availability.  
-3. **Track workout progress** — remember completed sets, finished sessions, weekly scheduling, and saved weights between app launches.  
+1. **Personalize your experience** — display your name, language, and member-since date.
+2. **Deliver workout plans** — fetch and cache plan content matched to your goal and weekly availability.
+3. **Track workout progress** — remember completed sets, finished sessions, weekly scheduling, and saved weights between app launches.
 4. **Operate and improve the App** — maintain local state so you can resume where you left off.
 
 We do not use your information for targeted advertising, automated profiling for marketing, or sale to data brokers.
@@ -108,9 +113,11 @@ We do not use your information for targeted advertising, automated profiling for
 
 Because personal and fitness data is stored locally:
 
-- **Uninstalling the App** generally removes this data from your device.  
-- **Switching devices** does not automatically transfer your profile or progress unless you use a future backup/sync feature.  
+- **Uninstalling the App** generally removes this data from your device.
+- **Switching devices** does not automatically transfer your profile or progress unless you use a future backup/sync feature.
 - **No cloud account** exists today to restore deleted local data.
+
+Profile settings such as **Log Out** and **Delete Account** are present in the UI for future functionality; in the current version they do not connect to a remote account or trigger server-side deletion.
 
 ---
 
@@ -133,18 +140,17 @@ We may also disclose information if required by law, regulation, legal process, 
 
 The App requests network access to download workout content and fonts.
 
-**Android:** Internet access is used for Firebase and font delivery.  
+**Android:** Internet access is used for Firebase and font delivery.
+
 **iOS:** Network access is used for the same purposes; no sensitive iOS permission prompts (camera, location, health, contacts, etc.) are used in the current version.
 
 ---
 
 ## 7. Data Retention
 
-- **On-device data** is retained until you clear app data, reset the App’s local storage (where available), or uninstall the App.  
-- **Firestore content** is cached locally as part of your plan; cached copies remain on your device until cleared or overwritten.  
+- **On-device data** is retained until you clear app data, reset the App’s local storage (where available), or uninstall the App.
+- **Firestore content** is cached locally as part of your plan; cached copies remain on your device until cleared or overwritten.
 - We do not maintain a central database of your personal or fitness data because no user account system is implemented.
-
-Profile settings such as **Log Out** and **Delete Account** are present in the UI for future functionality; in the current version they do not connect to a remote account or trigger server-side deletion.
 
 ---
 
@@ -161,13 +167,15 @@ Because Fit Flow stores personal data **locally on your device**, you can exerci
 | **Reset your plan** | Use “Reset Plan” in profile settings when that feature is enabled, or clear local app data. |
 | **Delete your data** | Uninstall the App or clear the App’s storage in your device settings. |
 
-If you are in the **European Economic Area (EEA)**, **United Kingdom**, or **California**, you may have additional rights under GDPR or CCPA/CPRA. Contact us (see Section 12) to submit a request. Because we do not operate user accounts, we may be unable to verify or fulfill requests for data we do not possess on our servers.
+If you are in the **European Economic Area (EEA)**, **United Kingdom**, or **California**, you may have additional rights under GDPR or CCPA/CPRA. Contact us (see Section 11) to submit a request. Because we do not operate user accounts, we may be unable to verify or fulfill requests for data we do not possess on our servers.
 
 ---
 
 ## 9. Children’s Privacy
 
-Fit Flow is intended for a general audience and is not directed at children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, contact us and we will take appropriate steps to delete locally stored data by guiding you through device-level removal, since no cloud account exists.
+Fit Flow is intended for a general audience and is not directed at children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children.
+
+If you believe a child has provided personal information through the App, contact us and we will take appropriate steps to delete locally stored data by guiding you through device-level removal, since no cloud account exists.
 
 ---
 
@@ -175,8 +183,8 @@ Fit Flow is intended for a general audience and is not directed at children unde
 
 We take reasonable measures to protect information handled by the App, including:
 
-- Storing personal and fitness data in the App’s local database on your device  
-- Using industry-standard HTTPS/TLS for network communication with Firebase and Google Fonts  
+- Storing personal and fitness data in the App’s local database on your device.
+- Using industry-standard HTTPS/TLS for network communication with Firebase and Google Fonts.
 
 No method of storage or transmission is 100% secure. You are responsible for securing your device (passcode, biometrics, etc.).
 
@@ -184,13 +192,19 @@ No method of storage or transmission is 100% secure. You are responsible for sec
 
 ## 11. International Data Transfers
 
-Firebase and Google Fonts are operated by Google LLC, which may process data in the United States and other countries. If you use the App from outside those regions, your information may be transferred internationally. Google provides safeguards as described in its privacy documentation.
+Firebase and Google Fonts are operated by Google LLC, which may process data in the United States and other countries.
+
+If you use the App from outside those regions, your information may be transferred internationally. Google provides safeguards as described in its privacy documentation.
 
 ---
 
 ## 12. Changes to This Policy
 
-We may update this Privacy Policy from time to time. When we do, we will revise the “Last updated” date at the top of this document. Material changes may also be communicated in the App or on our website. Continued use of the App after changes take effect constitutes acceptance of the updated policy.
+We may update this Privacy Policy from time to time. When we do, we will revise the “Last updated” date at the top of this document.
+
+Material changes may also be communicated in the App or on our website.
+
+Continued use of the App after changes take effect constitutes acceptance of the updated policy.
 
 ---
 
@@ -199,9 +213,7 @@ We may update this Privacy Policy from time to time. When we do, we will revise 
 If you have questions, concerns, or requests regarding this Privacy Policy or your data, contact:
 
 **Fit Flow**  
-Email: [privacy@ahmedkhedr.com](mailto:privacy@ahmedkhedr.com)  
-
-*Replace the contact email above with your official support address before publishing.*
+**Email:** [ahmedkhedr10a@gmail.com](mailto:ahmedkhedr10a@gmail.com)
 
 ---
 
@@ -209,13 +221,13 @@ Email: [privacy@ahmedkhedr.com](mailto:privacy@ahmedkhedr.com)
 
 ### Android
 
-- Application ID (production): `com.example.fit_flow`  
-- Application ID (development flavor): `com.example.fit_flow.dev`  
+- Application ID (production): `com.example.fit_flow`
+- Application ID (development flavor): `com.example.fit_flow.dev`
 
 ### iOS
 
-- Bundle identifier follows your Xcode build configuration (e.g., `com.example.fitFlow` / `com.example.fitFlow.dev`).
+- Bundle identifier follows your Xcode build configuration.
 
 ---
 
-*This policy was prepared based on a review of the Fit Flow application codebase as of June 6, 2026. Update this document when you add features such as user accounts, analytics, health integrations, cloud sync, or payment processing.*
+*This policy was prepared based on a review of the Fit Flow application codebase. Update this document when you add features such as user accounts, analytics, health integrations, cloud sync, or payment processing.*
